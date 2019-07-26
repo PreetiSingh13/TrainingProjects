@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "pbean" class = "Manager" scope="prototype" >
+   <property name="mname" value="Asf"></property>
+   <property name="id" value="2"></property>
+   
+     
+   </bean>
+   <bean id = "cbean" class = "Employee" scope="prototype" parent="pBean">
+   <property name="name" value="psf"></property>
+   <property name="salary" value="200"></property>
+   
+</bean>
+</beans>
