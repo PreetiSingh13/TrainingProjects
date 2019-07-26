@@ -1,0 +1,27 @@
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- <bean id="snkBean" class="springPk.SnacksBar">
+   <property name="Chocolate">
+   <list>
+   <value> Dairy milk</value>
+   <value> munch</value>
+   <value> perk</value>
+   <value> kitkat</value>
+   </list>
+   </property>
+   </bean>
+   -->
+   <bean id="sBean" class="springPk.SnacksBar">
+   <property name="softdrinks">
+   <set>
+   <value>cola</value>
+   <value>limca</value>
+   <value>pepsi</value>
+   </set>
+   </property>
+   </bean>
+   
+   </beans>
