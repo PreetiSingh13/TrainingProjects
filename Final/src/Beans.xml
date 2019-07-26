@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ <bean id="cbean" class="springFin.College" >
+ <property name="cname" value="LNCT"></property>
+ <property name="Regno" value="123"></property>
+ <property name="cadd" value="Bhopal"></property>
+ <property name="phone_no" value="6516617"></property>
+ <property name="tob" ref="tbean"></property>
+ <property name="sob" ref="sbean"></property>
+ </bean>
+ <bean id="tbean" class="springFin.Teacher" >
+ <property name="tname" value="sethi"></property>
+ <property name="dept" value="cse"></property>
+ </bean>
+ <bean id="sbean" class="springFin.Student" >
+ <property name="sname" value="sethi"></property>
+ <property name="branch" value="ece"></property>
+ </bean>
+ 
+ </beans>
